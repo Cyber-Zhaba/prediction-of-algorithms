@@ -112,7 +112,8 @@ ax2.plot(circle[..., 0], circle[..., 1], "r--")
 ax3.plot(circle[..., 0], circle[..., 1], "r--");
 ```
 
-![[Pasted image 20240811141143.png]]
+![](https://github.com/Cyber-Zhaba/prediction-of-algorithms/blob/master/Pasted%20image%2020240811141143.png)
+
 ### Архитектура модели
 
 Решим эту задачу обычным перцептроном с одним скрытым слоем. Последовательность обработки входных данных завершается применением сигмойды, что гарантирует получение ответа в промежутке $(0, 1)$. Пусть $1$ будет отвечать за первый алгоритм, а $0$ второй соответственно
@@ -222,7 +223,7 @@ for ep, ls, bs in product(ep_list, ls_list, bs_list):
 | 0.5015   | 16        | 0.1          |
 | 0.5006   | 32        | 0.1          |
 
-![[GridSearch Plot.svg]]
+![](https://github.com/Cyber-Zhaba/prediction-of-algorithms/blob/master/GridSearch%20Plot.svg)
 ### Обучение финальной модели
 
 
@@ -230,7 +231,7 @@ for ep, ls, bs in product(ep_list, ls_list, bs_list):
 final_model = train(10_000, 0.05, 32, "Fin ", True)
 ```
 
-![[Accuracy plot.svg]]
+![](https://github.com/Cyber-Zhaba/prediction-of-algorithms/blob/master/Accuracy%20plot.svg)
 ### Сохранение параметров модели
 
 
